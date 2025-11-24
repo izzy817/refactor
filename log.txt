@@ -1,2 +1,7 @@
+bf8e25d Merge pull request #3 from izzy817/Task-1.2
+db19cba Task 1.2
+d94a0b0 Merge pull request #2 from izzy817/Task-1.1
+ac429f9 'Task 1.1'
+33276e8 Merge pull request #1 from izzy817/Task-1.1
 813cbc3 Task 1.1 finish
 5df70ea Initial commit
