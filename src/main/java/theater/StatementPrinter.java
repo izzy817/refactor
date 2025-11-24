@@ -8,8 +8,8 @@ import java.util.Map;
  * This class generates a statement for a given invoice of performances.
  */
 public class StatementPrinter {
-    private Invoice invoice;
-    private Map<String, Play> plays;
+    private final Invoice invoice;
+    private final Map<String, Play> plays;
 
     public StatementPrinter(Invoice invoice, Map<String, Play> plays) {
         this.invoice = invoice;
@@ -32,7 +32,7 @@ public class StatementPrinter {
         for (Performance p : invoice.getPerformances()) {
             final Play play = plays.get(p.getPlayID());
 
-            int thisAmount = 0;
+            int thisAmount;
             switch (play.getType()) {
                 case "tragedy":
                     thisAmount = Constants.TRAGEDY_BASE_AMOUNT;
